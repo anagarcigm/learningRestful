@@ -1,0 +1,5 @@
+CLASS zbp_dd_booking_ana DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zdd_travel_ana.
+ENDCLASS.
+
+CLASS zbp_dd_booking_ana IMPLEMENTATION.
+ENDCLASS.

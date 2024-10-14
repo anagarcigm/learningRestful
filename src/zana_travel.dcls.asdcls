@@ -1,0 +1,13 @@
+@EndUserText.label: 'Access Control for Travel'
+@MappingRole: true
+define role ZANA_TRAVEL {
+    grant
+        select
+            on
+                ZDD_TRAVEL_ANA
+                    where
+                        CurrencyCode = 'EUR'
+                        AND
+                        ( TravelStatus ) = aspect pfcg_auth ( ZAN_STATUS, ZAN_STATUS, ACTVT = '03')
+                        or true;
+}

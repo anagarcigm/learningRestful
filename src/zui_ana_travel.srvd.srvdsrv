@@ -1,0 +1,13 @@
+@EndUserText.label: 'Serv. Definition Travel Projection'
+define service ZUI_ANA_TRAVEL {
+  expose ZC_ANA_TRAVEL     as travel;
+  expose ZC_ANA_BOOKING    as booking;
+  expose /DMO/I_Agency     as Agency;
+  expose /DMO/I_Customer   as Customer;
+  expose /DMO/I_Flight     as Flight;
+  expose /DMO/I_Carrier    as Carrier;
+  expose /DMO/I_Connection as Connection;
+  expose /DMO/I_Airport    as Airport;
+  expose I_Currency        as Currency;
+  expose I_Country         as country;
+}
